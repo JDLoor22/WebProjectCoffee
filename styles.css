@@ -1,0 +1,553 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Candara', sans-serif;
+  background-color: #432721;
+}
+
+/* Header Styles */
+.header {
+  background-color: #432721;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 30px;
+  position: relative;
+}
+
+.logo-img {
+  position: absolute; /* Positioned absolutely to allow control over its placement */
+  top: 18px; /* Adjust the top value as needed to align the image */
+  left: 20px; /* Adjust the left value as needed to align the image */
+  height: 100px; /* Set the desired height of the logo image */
+}
+
+.logo {
+  margin: 0;
+  font-size: 36px;
+}
+
+.slogan {
+  margin: 10px 0 0;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Styles */
+.navbar {
+  background-color: #cbb691;
+  padding: 5px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: #432721;
+}
+
+/* Carousel */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Number text */
+.numbertext {
+  color: #cbb691;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #cbb691;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #a7977b;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .3}
+  to {opacity: 1}
+}
+
+/* Hero Section Styles */
+.welcome {
+  position: relative;
+  text-align: center;
+  padding: 200px 0;
+  /*background-color: #f2f2f2;*/
+}
+
+.welcome-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("coffee-hero.jpg");
+  opacity: 85%;
+  filter: brightness(60%);
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Changed to -1 to move the image behind the content */
+}
+
+.welcome-title {
+  font-size: 48px;
+  color: #cbb691;
+  margin: 0;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Adjusted to 1 to bring the title above the image */
+}
+
+.welcome-text {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color:  #cbb691;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Adjusted to 1 to bring the button above the image */
+}
+
+.cta-btn:hover {
+  background-color:  #432721;
+}
+
+/* Specific Page Styles */
+.product-list {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.product {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #cbb691;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.about-us {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url("Coffee-Beans.png"); /* Add the background image here */
+  background-size: cover; /* Adjust background size to cover the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-color: rgb(240, 233, 217);
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 23px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+*.about-image {
+  flex: 1;
+  padding: 10px;
+  max-width: 350px;
+  border-radius: 10px;
+  background-color: #432721;;
+}
+
+.about-image img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.about-logo {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  margin-left: 95px;
+  margin-right: 95px;
+}
+
+.about-text {
+  flex: 1;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 300px;
+  text-align: left;
+  background-color: #cbb691;
+  color: black;
+
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #deb073;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #a54900;
+}
+
+.products {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url("coffee-beans2.jpg"); /* Add the background image here */
+  background-size: cover; /* Adjust background size to cover the entire section */
+  background-position: center; /* Center the background image */
+  background-color: rgb(240, 233, 217);
+}
+
+.products-title{
+  color: white;
+  font-size: 30px;
+}
+
+/* Social Styles */
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+a.facebook {
+  background-image: url(IMG/facebook.svg);
+}
+a.twitter {
+  background-image: url(IMG/twitter.svg);
+}
+a.instagram {
+  background-image: url(IMG/instagram.svg);
+}
+a.whatsapp {
+  background-image: url(IMG/whatsapp.svg);
+}
+a.social:hover {
+  opacity: 1;
+  color: white;
+}
+.clearfix {
+  clear: both;
+}
+
+
+/* Footer Styles */
+.footer {
+  background-color: #432721;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+
+/* Section "contact" */
+.contact {
+  padding: 50px;
+  text-align: center;
+  background-color:#000000;
+  color: white;
+}
+
+
+.social {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #52352e;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #432721;
+}
+
+
+
+
+.rigth-side {
+  /* flex: 1; */
+  margin: 50px;
+  padding: 10px ;
+  text-align: center;
+  border-radius: 15px;
+  max-width: 500px;
+  /* text-align: left; */
+  background-color: #cbb691;
+  color: black;
+  transition: all 0.5s;
+}
+
+.left-side{
+  /* flex: 1; */
+  margin: 50px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  max-width: 500px;
+  /* text-align: left; */
+  background-color: #cbb691;
+  color: black;
+  transition: all 0.5s;
+}
+
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  .flex-left {
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 10px auto;
+  }
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  .flex-right {
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 10px auto;
+  }
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url("coffee-beans.jpeg");
+  background-color: #ddd;
+}
+
+
+/* Cofee Products Slider */
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+} */
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #cbb691;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.slider-items {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.slider-item img {
+  width: 250px;
+  height: 250px;
+}
+
+.slider-item .description, .slider-item .price {
+  font-size: 0.8em;
+  margin: 5px 0;
+}
+
+.slider-item .price span {
+  font-weight: bold;
+}
+
+.slider-item .buy-button {
+  background-color: #5D4037; 
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* tones hover */
+.slider-item .buy-button:hover {
+  background-color: #402921; 
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* background-color: rgba(0,0,0,0.5); */
+  background-color: #5D4037;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.slider-arrow-left {
+  left: 10px;
+}
+
+.slider-arrow-right {
+  right: 10px;
+}
+
+
+.buy-button:hover:hover {
+  background-color: #3c221c;
+}
